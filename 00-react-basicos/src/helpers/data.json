@@ -1,0 +1,39 @@
+{
+	"frameworks": [
+		{
+			"id": 1,
+			"name": "Angular",
+			"language": "JavaScript/TypeScript"
+		},
+		{
+			"id": 2,
+			"name": "Express",
+			"language": "JavaScript/TypeScript"
+		},
+		{
+			"id": 3,
+			"name": "Django",
+			"language": "Python"
+		},
+		{
+			"id": 4,
+			"name": "Spring",
+			"language": "Java"
+		},
+		{
+			"id": 5,
+			"name": "Flask",
+			"language": "Python"
+		},
+		{
+			"id": 6,
+			"name": "Vue",
+			"language": "JavaScript/TypeScript"
+		},
+		{
+			"id": 7,
+			"name": "NestJS",
+			"language": "JavaScript/TypeScript"
+		}
+	]
+}
