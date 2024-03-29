@@ -1,0 +1,214 @@
+:root {
+	--red-color: #F05454;
+	--gray-light-color: #F2F4F7;
+	--dark-color: #3D3B40;
+	--green-color: #45CFDD;
+	--yellow-color: #FFD082;
+	--white-color: #FEFEFE;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #353535;
+	font-family: "Rubik", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+section {
+	margin: 50px 0;
+}
+
+.input-text {
+	width: 100%;
+	outline: none;
+	border: thin solid var(--gray-light-color);
+	border-radius: 6px;
+	padding: 12px 16px;
+	font-size: 15px;
+}
+
+.input {
+	display: inline-block;
+	padding: 6px 12px;
+	border: thin solid var(--gray-light-color);
+	border-radius: 6px;
+	cursor: pointer;
+	background: transparent;
+	font-weight: 600;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 32px auto;
+}
+
+/* crud-app */
+
+.crud-app {
+	max-width: 1440px;
+	margin: 50px auto;
+	padding: 8px 16px;
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 60px auto auto;
+	column-gap: 24px;
+	grid-template-areas:
+		"titulo titulo titulo titulo"
+		"form form message message"
+		"form form tabla tabla"
+		"form form tabla tabla"
+	;
+}
+
+.crud-app h2 {
+	grid-area: titulo;
+	text-align: center;
+}
+
+.crud-app .form-container {
+	grid-area: form;
+}
+
+.crud-app .form-container form {
+	display: grid;
+	gap: 16px;
+}
+
+.crud-app .form-container form .btn-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 24px;
+}
+
+.crud-app .form-container form .btn-container input {
+	width: 200px;
+}
+
+.crud-app .table-container {
+	grid-area: tabla;
+}
+
+.crud-app .table-container h3,
+.crud-app .form-container h3 {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.btn-container .btn-submit {
+	background-color: var(--dark-color);
+	color: var(--yellow-color);
+	padding: 10px 12px;
+}
+
+.btn-container .btn-reset {
+	background-color: var(--gray-light-color);
+	color: var(--red-color);
+	padding: 10px 12px;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	color: var(--red-color);
+	position: sticky;
+	top: 0;
+}
+
+td, th {
+	padding: 8px 12px;
+	text-align: justify;
+}
+
+tr td:last-child,
+tr th:last-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-edit {
+	border: thin solid var(--yellow-color);
+	color: var(--yellow-color);
+	transition: all .3s ease-out;
+}
+
+.btn-edit:hover {
+	background-color: var(--yellow-color);
+	color: var(--white-color)
+}
+
+.btn-delete {
+	border: thin solid var(--red-color);
+	color: var(--red-color);
+}
+
+.btn-delete:hover {
+	background-color: var(--red-color);
+	color: var(--white-color)
+}
+
+.acciones {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+@media screen and (max-width: 875px) {
+	.crud-app {
+		grid-template-columns: 1fr;
+		grid-template-rows: 60px auto auto;
+		grid-template-areas:
+		"titulo"
+		"form"
+		"message"
+		"tabla"
+		;
+	}
+	
+	.form-container {
+		margin-bottom: 24px;
+	}
+	
+	.table-container {
+		margin-top: 24px;
+	}
+	
+}
+
+
+/* users-app */
+
+.users-app {
+	display: grid;
+	gap: 24px;
+}
+
+.users-app h2 {
+	padding: 24px;
+	text-align: center;
+}
+
+.table-user-img img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50px;
+}
+
+
+.message {
+	width: 100%;
+	grid-area: message;
+}

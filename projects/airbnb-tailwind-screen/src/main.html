@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-100 dark:bg-zinc-800">
+    <header class="bg-white px-6 shadow dark:bg-zinc-800">
+        
+        <div class="flex justify-between h-16 items-center max-w-7xl mx-auto">
+            <button id="btn-menu" class="text-slate-500 p-1 -ml-1 hover:bg-indigo-500 hover:text-slate-100 rounded transition-colors focus:ring-2 focus:ring-slate-200 md:hidden">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <div class="flex gap-x-[4rem]">
+                <a href="#" class="flex items-center gap-x-1 text-indigo-500 hover:rotate-[-2deg] duration-200">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+                    </svg>
+                    MernStack
+                </a>
+                <ul class="gap-x-3 space-x-4 hidden md:flex">
+                    <li>
+                        <a href="#" class="text-indigo-500 dark:text-indigo-500 block px-3 py-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-slate-600 dark:text-slate-100 hover:text-indigo-500 block px-3 py-2 transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-slate-600 dark:text-slate-100 hover:text-indigo-500 block px-3 py-2 transition-colors">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-slate-600 dark:text-slate-100 hover:text-indigo-500 block px-3 py-2 transition-colors">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex gap-x-4">
+                <button id="btn-theme" class="text-slate-500 -ml-1 text-yellow-500 rounded-full transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-1">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" stroke="currentColor" 
+                        class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>                    
+                </button>
+                <button class="text-slate-500 -ml-1 text-yellow-500 rounded-full transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-1">
+                    <img 
+                        class="w-8 h-8 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                </button>
+            </div>
+        </div>
+        
+        <ul id="menu-mobile" class="hidden space-y-1 border-t pb-3 pt-2 md:hidden">
+            <li>
+                <a href="#" class="bg-indigo-500 text-white block px-3 py-2 rounded-md">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-slate-700 hover:bg-indigo-500 hover:text-white block px-3 py-2 rounded-md transition-colors">About</a>
+            </li>
+            <li>
+                <a href="#" class="text-slate-700 hover:bg-indigo-500 hover:text-white block px-3 py-2 rounded-md transition-colors">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="text-slate-700 hover:bg-indigo-500 hover:text-white block px-3 py-2 rounded-md transition-colors">Contact</a>
+            </li>
+        </ul>
+    </header>
+    
+    <main class="mx-auto my-10 max-w-7xl p-4">
+        
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-[2rem]">
+            
+            <article class="flex flex-col bg-white shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+                        <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="bg-white h-max shadow rounded overflow-hidden">
+                <div class="h-52">
+                    <img
+                        class="h-full w-full object-cover object-center" 
+                        src="../public/img1.jpg"
+                        slt="imagen 1"
+                    />
+                </div>
+                <div class="flex flex-col mt-2 gap-y-[12px] p-3">
+                    <h3 class="text-sm text-indigo-500 font-bold">Node JS</h3>
+                    <h2 class="text-lg font-bold leading-tight">
+                        Desarrollo de una API con Express JS siguendo la espeficion RestFull API
+                    </h2>
+                    <p class="text-slate-800 line-clamp-4 hover:line-clamp-none">
+                        Usaremos Express para Node.js para crear API RESTful. Crearemos y configuraremos 
+                        un middleware para agregar cosas como funciones de registro, autenticación y 
+                        autorización junto a otras tecnologías de desarrollo web.
+                    </p>
+                </div>
+                <div class="p-3 flex items-center gap-x-4">
+                    <img 
+                        class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api?name=Jose+Alvarado" 
+                        alt="Jose Alvarado"
+                    />
+                    <div class="flex flex-col justify-center gap-y-1 text-sm">
+                        <span class="text-indigo-700 font-extrabold">Jose Alvarado</span>
+                        <span class="text-slate-500"><i>Mar 24, 2024</i></span>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+        
+    </main>
+    
+    <footer class="bg-white p-4">
+        
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-6">
+            <div>
+                <p class="text-indigo-600">2024 Jose Alvarado, All rights reserved</p>
+            </div>
+            <ul class="flex items-center justify-center gap-x-4">
+                <li class="">
+                    <a class="grid justify-items-center justify-center text-2xl text-blue-800 hover:scale-125" href="#">
+                        <i class='bx bxl-facebook-circle'>
+                    </i></a>
+                </li>
+                <li>
+                    <a class="grid justify-items-center justify-center text-2xl text-pink-900 hover:scale-125"  href="#">
+                        <i class='bx bxl-instagram' ></i></i>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        class="grid justify-items-center justify-center text-2xl text-gray-900 hover:scale-125" 
+                        href="#">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="grid justify-items-center justify-center text-2xl text-blue-500 hover:scale-125"  
+                        href="#"><i class='bx bxl-twitter' ></i></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
